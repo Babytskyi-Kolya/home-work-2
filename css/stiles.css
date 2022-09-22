@@ -1,6 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 400;
+    --dominant-color: #212121;
+    --secondary-color:  #757575;
+    --accent-color:  #2196F3;
 }
 
 a {
@@ -11,9 +15,9 @@ ul {
     list-style-type: none;
 }
 
-/* Header */
+/*                                  Header */
 
-/* Logo */
+/*                             Logo header/footer*/
 .logo {
     font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -28,10 +32,10 @@ ul {
 }
 
 .logo .logo-decoration {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-/* Navigation */
+/*                                 Navigation */
 
 .hed-stile {
         font-weight: 500;
@@ -39,101 +43,111 @@ ul {
         line-height: 1.1;
 }
 
-.nav-link a {
-    color: #212121;
+.nav-link .link{
+    color: var(--dominant-color);
 }
 
-.nav-link.current a{
-    color: #2196F3;
+.nav-link.current .link{
+    color: var(--accent-color);
 }
 
 .contacts{
-    color: #757575;
+    color: var(--secondary-color);
 }
-/* accent */
+/*                                    accent */
 .contacts:hover,
 .contacts:focus,
-.nav-link a:hover,
-.nav-link a:focus{
-    color: #2196F3;
+.nav-link .link:hover,
+.nav-link .link:focus,
+.decor-address .address:hover,
+.decor-address .address:focus{
+    color: var(--accent-color);
 }
 
 .button:hover,
 .button:focus {
-    background: #2196F3;
-    color: #FFFFFF;;
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 
-/* main index*/
+/*                                    main index*/
 .hero {
     background-color: #2F303A;
 }
-.hero h1 {
+.hero .title{
     font-weight: 900;
         font-size: 44px;
         line-height: 1.2;
+        text-transform: uppercase;
          color: #FFFFFF;
+
 }
-.hero input {
+.hero .button{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9; 
+    text-transform: uppercase;
+    color: var(--dominant-color);
 }
 .button {
 background: #F5F4FA;
-color: #212121;
+cursor: pointer;
 }
 .name-section{
     font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        color: #212121;
+        color: var(--dominant-color);
 }
-.benefits h3 {
+.benefits .benefits-title{
     font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
-        color: #212121;
+        text-transform: uppercase;
+        color: var(--dominant-color);
 }
-.benefits p {
-font-weight: 400;
+.benefits .text {
     font-size: 14px;
     line-height: 1.7;
-    color: #757575;
+    color: var(--secondary-color);
 }
-.team h3 {
+.team .team-title {
     font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
-        color: #212121;
+        color: var(--dominant-color);
 }
-.team p {
-    font-weight: 400;
+.team .position {
         font-size: 16px;
         line-height: 1.18;
-        color: #757575;
+        color: var(--secondary-color);
 }
-/* main portfolio */
-.icon-product h3 {
+/*                                  main portfolio */
+.button-portfolio{
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1,6;
+ color: var(--dominant-color);
+}
+.icon-product .name-product {
     font-weight: 700;
 font-size: 18px;
 line-height: 2;
-color: #212121;
+color: var(--dominant-color);
 }
-.icon-product p {
-    font-weight: 400;
+.icon-product .group {
 font-size: 16px;
 line-height: 1.87;
-color: #757575;
+color: var(--secondary-color);
 }
 
-/* footer */
+/*                                   footer */
 .bg-footer {
     background-color: #2F303A;
 }
-.bg-footer address {
+.bg-footer .address {
     font-style: normal;
-    font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         color: #FFFFFF;
+}
